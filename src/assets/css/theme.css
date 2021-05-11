@@ -1,0 +1,35 @@
+.brand {
+  background-color: #F29B38;
+}
+
+.light {
+  background-color: #FFCC68;
+}
+
+.dark {
+  background-color: #E29121;
+}
+
+.dark-brand {
+  background-color: #212121;
+}
+
+.dark-light {
+  background-color: #484848;
+}
+
+.dark-black {
+  background-color: #000000;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.light-grey {
+  background-color: #FAFAFA;
+}
+
+.grey {
+  background-color: #F5F5F5;
+}
