@@ -1,0 +1,67 @@
+@import "theme.css";
+@import "app.css";
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  white-space: nowrap;
+  transition: 0.3s;
+  text-decoration: none !important;
+}
+
+.navbar a i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+  color: #fff;
+}
+
+.hero-section {
+  background: linear-gradient(to right, rgba(242, 155, 56, 1) 0%, rgba(229, 170, 128, 1) 100%), url(../img/hero-bg.jpg);
+  position: relative;
+}
+
+.download {
+  background: linear-gradient(to right, rgba(242, 155, 56, 1) 0%, rgba(229, 170, 128, 1) 100%);
+  border: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(to right, rgba(229, 170, 128, 1) 0%, rgba(242, 155, 56, 1) 100%);
+  color: #fff;
+}
+
+.cta-section h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+}
