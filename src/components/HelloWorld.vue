@@ -6,22 +6,60 @@
         <div class="logo">
           <h1>
             <a href="index.html">
-              <img src="../assets/img/app_logo.svg" alt="Koogah Logo"/>
+              <img src="../assets/img/app_logo.svg" alt="Koogah Logo" />
             </a>
-            </h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+          </h1>
         </div>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler border-0 fs-1 text-white"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="bi bi-list"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Become a Customer</a>
+                <a class="nav-link" href="#">Faq</a>
+                <a class="nav-link" href="#">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </nav> -->
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">Become a customer</a></li>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler border-0 fs-1 text-white mobile-nav-toggle"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="bi bi-list"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <a class="nav-link active text-black text-bold" href="/">
+              <h6>Home</h6>
+            </a>
+             <a class="nav-link text-black" href="/dispatcher">
+              <h6>Become a Dispatcher</h6>
+            </a>
+            <a class="nav-link text-black" href="#">
+              <h6>FAQ</h6>
+            </a>
+            <a class="nav-link text-black" href="#">
+              <h6>Contact Us</h6>
+            </a>
+          </div>
         </nav>
+
         <!-- .navbar -->
       </div>
     </header>
@@ -29,51 +67,24 @@
 
     <!-- ======= Hero Section ======= -->
     <section class="hero-section" id="hero">
-      <div class="wave">
-        <svg
-          width="100%"
-          height="355px"
-          viewBox="0 0 1920 355"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <g
-            id="Page-1"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-          >
-            <g
-              id="Apple-TV"
-              transform="translate(0.000000, -402.000000)"
-              fill="#FFFFFF"
-            >
-              <path
-                d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,757 L1017.15166,757 L0,757 L0,439.134243 Z"
-                id="Path"
-              ></path>
-            </g>
-          </g>
-        </svg>
-      </div>
-
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 hero-text-image">
             <div class="row">
               <div class="col-lg-8 text-center text-lg-start">
-                <h1 data-aos="fade-right">Promote Your App with SoftLand</h1>
-                <p class="mb-5" data-aos="fade-right" data-aos-delay="100">
-                  Download the Koogah app.
-                </p>
-                <div class="col-md-5 text-center text-md-end">
+                <h1 data-aos="fade-right" class="text-black">A complete solution to logistics and package delivery.</h1>
+                <div class="col-md-5 ">
+                  <h6>Download on</h6>
                   <p>
-                    <a href="#" class="btn btn-dark d-inline-flex align-items-center me-2"
-                      ><i class="bx bxl-apple fs-3"></i><span>App store</span></a
+                    <a
+                      href="#"
+                      class="btn btn-dark d-inline-flex align-items-center me-2"
+                      ><i class="bx bxl-apple fs-3"></i
+                      ><span>App store</span></a
                     >
-                    <a href="#" class="btn btn-dark d-inline-flex align-items-center"
+                    <a
+                      href="#"
+                      class="btn btn-dark d-inline-flex align-items-center"
                       ><i class="bx bxl-play-store fs-3"></i
                       ><span>Google play</span></a
                     >
@@ -82,13 +93,13 @@
               </div>
               <div class="col-lg-4 iphone-wrap">
                 <img
-                  src="../assets/img/phone_1.png"
+                  src="../assets/img/koogah_market_place_mobile.png"
                   alt="Image"
                   class="phone-1"
                   data-aos="fade-right"
                 />
                 <img
-                  src="../assets/img/phone_2.png"
+                  src="../assets/img/koogah_tracking_mobile.png"
                   alt="Image"
                   class="phone-2"
                   data-aos="fade-right"
@@ -214,7 +225,11 @@
                 molestiae porro omnis. Dolores aspernatur delectus impedit
                 incidunt dolore mollitia esse natus beatae.
               </p>
-              <p><a href="#" class="btn btn-primary download">Download on App store</a></p>
+              <p>
+                <a href="#" class="btn btn-primary download"
+                  >Download on App store</a
+                >
+              </p>
             </div>
             <div class="col-md-6" data-aos="fade-left">
               <img
@@ -238,7 +253,11 @@
                 molestiae porro omnis. Dolores aspernatur delectus impedit
                 incidunt dolore mollitia esse natus beatae.
               </p>
-              <p><a href="#" class="btn btn-primary download">Download on playstore</a></p>
+              <p>
+                <a href="#" class="btn btn-primary download"
+                  >Download on playstore</a
+                >
+              </p>
             </div>
             <div class="col-md-6" data-aos="fade-right">
               <img
@@ -252,20 +271,52 @@
       </section>
 
       <!-- ======= CTA Section ======= -->
-      <section class="section cta-section">
+      <section class="section cta-section" id="head">
         <div class="container">
           <div class="row align-items-center">
             <div
               class="col-md-6 me-auto text-center text-md-start mb-5 mb-md-0"
             >
-              <h2>Starts Publishing Your Apps</h2>
+              <h1 class="text-white">Coming Soon</h1>
+              <p class="text-white">
+                We're working hard to improve our website and we'll be ready to
+                launch after
+              </p>
+              <div class="countdown d-flex justify-content-center">
+                <Countdown end="August 22, 2021"></Countdown>
+              </div>
+              <!-- <div
+                class="countdown d-flex justify-content-center"
+                data-count="2021/12/5"
+              >
+                <div>
+                  <h3 class="text-white">%d</h3>
+                  <h4 class="text-white">Days</h4>
+                </div>
+                <div>
+                  <h3 class="text-white">%h</h3>
+                  <h4 class="text-white">Hours</h4>
+                </div>
+                <div>
+                  <h3 class="text-white">%m</h3>
+                  <h4 class="text-white">Minutes</h4>
+                </div>
+                <div>
+                  <h3 class="text-white">%s</h3>
+                  <h4 class="text-white">Seconds</h4>
+                </div>
+              </div> -->
             </div>
             <div class="col-md-5 text-center text-md-end">
               <p>
-                <a href="#" class="btn btn-dark d-inline-flex align-items-center me-2"
+                <a
+                  href="#"
+                  class="btn btn-dark d-inline-flex align-items-center me-2"
                   ><i class="bx bxl-apple"></i><span>App store</span></a
                 >
-                <a href="#" class="btn btn-dark d-inline-flex align-items-center"
+                <a
+                  href="#"
+                  class="btn btn-dark d-inline-flex align-items-center"
                   ><i class="bx bxl-play-store"></i><span>Google play</span></a
                 >
               </p>
@@ -282,7 +333,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-4 mb-md-0">
-            <h3>About Koogah</h3>
+            <h3 class="text-white">About Koogah</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea
               delectus pariatur, numquam aperiam dolore nam optio dolorem
@@ -298,28 +349,31 @@
           <div class="col-md-7 ms-auto">
             <div class="row site-section pt-0">
               <div class="col-md-4 mb-4 mb-md-0">
-                <h3>Navigation</h3>
+                <h3 class="text-white">Navigation</h3>
                 <ul class="list-unstyled">
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#" class="text-white">Become a customer</a></li>
+                  <li><a href="#" class="text-white">FAQ</a></li>
+                  <li><a href="#" class="text-white">Contact</a></li>
                 </ul>
               </div>
               <div class="col-md-4 mb-4 mb-md-0">
-                <h3>Services</h3>
+                <h3 class="text-white">Services</h3>
                 <ul class="list-unstyled">
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Collaboration</a></li>
-                  <li><a href="#">Todos</a></li>
-                  <li><a href="#">Events</a></li>
+                  <li><a href="#" class="text-white">Team</a></li>
+                  <li><a href="#" class="text-white">Collaboration</a></li>
+                  <li><a href="#" class="text-white">Todos</a></li>
+                  <li><a href="#" class="text-white">Events</a></li>
                 </ul>
               </div>
               <div class="col-md-4 mb-4 mb-md-0">
-                <h3>Downloads</h3>
+                <h3 class="text-white">Downloads</h3>
                 <ul class="list-unstyled">
-                  <li><a href="#">Get from the App Store</a></li>
-                  <li><a href="#">Get from the Play Store</a></li>
+                  <li>
+                    <a href="#" class="text-white">Get from the App Store</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-white">Get from the Play Store</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -335,3 +389,10 @@
     ></a>
   </main>
 </template>
+
+<script>
+import Countdown from "vuejs-countdown";
+export default {
+  components: { Countdown },
+};
+</script>

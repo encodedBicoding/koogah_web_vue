@@ -5,6 +5,7 @@ import store from "./store";
 import desi from "./assets/css/index.css";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Tooltip, Toast, Popover } from "bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import swiper from "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
@@ -61,5 +62,8 @@ new Vue({
   swiper,
   icon,
   AOS,
+  Toast,
+  Tooltip,
+  Popover,
   render: (h) => h(App),
 }).$mount("#app");
