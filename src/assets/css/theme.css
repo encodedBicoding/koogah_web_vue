@@ -13,6 +13,15 @@
 .dark-brand {
   background-color: #212121;
 }
+.text-brand {
+  color: #212121 !important
+}
+.text-black {
+  color: #000000 !important;
+}
+.text-bold {
+  font-weight: 900;
+}
 
 .dark-light {
   background-color: #484848;

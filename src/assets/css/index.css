@@ -42,13 +42,17 @@
   color: #fff;
 }
 
-.hero-section {
+/* .hero-section {
   background: linear-gradient(
       to right,
       rgba(229, 170, 128, 1) 0%,
       rgba(242, 155, 56, 1) 100%
     ),
     url(../img/hero-bg.jpg);
+  position: relative;
+} */
+.hero-section {
+  background:#F29B38;
   position: relative;
 }
 
@@ -108,11 +112,7 @@ a {
   transition: all 0.5s !important;
   z-index: 997 !important;
   transition: all 0.5s !important;
-  background: linear-gradient(
-    to right,
-    rgba(229, 170, 128, 1) 0%,
-    rgba(242, 155, 56, 1) 100%
-  ) !important;
+  background: #f29b38 !important;
 }
 
 #header .logo h1 {
@@ -140,7 +140,7 @@ a {
 --------------------------------------------------------------*/
 .footer {
   padding: 5rem 0 2.5rem 0;
-  background: #000000;
+  background: #212121;
   color: #ffffff;
 }
 

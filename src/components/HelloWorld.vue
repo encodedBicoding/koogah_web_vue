@@ -45,13 +45,18 @@
             <span class="bi bi-list"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <a class="nav-link active" href="#">Home</a>
-
-            <a class="nav-link" href="#">Become a customer</a>
-
-            <a class="nav-link" href="#">Faq</a>
-
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link active text-black text-bold" href="/">
+              <h6>Home</h6>
+            </a>
+             <a class="nav-link text-black" href="/dispatcher">
+              <h6>Become a Dispatcher</h6>
+            </a>
+            <a class="nav-link text-black" href="#">
+              <h6>FAQ</h6>
+            </a>
+            <a class="nav-link text-black" href="#">
+              <h6>Contact Us</h6>
+            </a>
           </div>
         </nav>
 
@@ -67,11 +72,9 @@
           <div class="col-12 hero-text-image">
             <div class="row">
               <div class="col-lg-8 text-center text-lg-start">
-                <h1 data-aos="fade-right">Promote Your App with Koogah</h1>
-                <p class="mb-5" data-aos="fade-right" data-aos-delay="100">
-                  Download the Koogah app.
-                </p>
-                <div class="col-md-5 text-center text-md-end">
+                <h1 data-aos="fade-right" class="text-black">A complete solution to logistics and package delivery.</h1>
+                <div class="col-md-5 ">
+                  <h6>Download on</h6>
                   <p>
                     <a
                       href="#"
@@ -90,13 +93,13 @@
               </div>
               <div class="col-lg-4 iphone-wrap">
                 <img
-                  src="../assets/img/KK.png"
+                  src="../assets/img/koogah_market_place_mobile.png"
                   alt="Image"
                   class="phone-1"
                   data-aos="fade-right"
                 />
                 <img
-                  src="../assets/img/K2.png"
+                  src="../assets/img/koogah_tracking_mobile.png"
                   alt="Image"
                   class="phone-2"
                   data-aos="fade-right"
