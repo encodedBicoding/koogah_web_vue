@@ -71,14 +71,8 @@ a {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(
-      to right,
-      rgba(209, 206, 202, 0.185) 0%,
-      rgba(209, 206, 202, 0.185) 0%
-    ),
-    url(../img/bg.jpg) center no-repeat;
+  background-color: #f2f2f2;
   background-size: cover;
-  color: #fff;
 }
 
 .cta-section h2 {
@@ -211,6 +205,7 @@ a {
 }
 
 .feature-1 .wrap-icon.icon-1 {
+  margin-top: 40px;
   background: linear-gradient(-45deg, #f29b38, #e29121);
 }
 
@@ -276,7 +271,7 @@ section {
   margin: 10px !important;
   width: 100px !important;
   padding: 15px 0 !important;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(100, 99, 99, 0.048);
   border-top: 5px solid #F29B38;
 }
 

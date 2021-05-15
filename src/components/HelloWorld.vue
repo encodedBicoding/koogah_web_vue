@@ -119,7 +119,7 @@
         <div class="container">
           <div class="row justify-content-center text-center mb-5">
             <div class="col-md-5" data-aos="fade-up">
-              <h2 class="section-heading">Save your time to using Koogah</h2>
+              <h2 class="section-heading">Our Services</h2>
             </div>
           </div>
 
@@ -141,7 +141,19 @@
                 <div class="wrap-icon icon-1">
                   <i class="bi bi-brightness-high"></i>
                 </div>
-                <h3 class="mb-3">Track Your Order</h3>
+                <h3 class="mb-3">Faster Pickup Time</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+                  optio.
+                </p>
+              </div>
+            </div>
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-1 text-center">
+                <div class="wrap-icon icon-1">
+                  <i class="bi bi-brightness-high"></i>
+                </div>
+                <h3 class="mb-3">Real-time Tracking and Location Analysis</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
                   optio.
@@ -153,7 +165,31 @@
                 <div class="wrap-icon icon-1">
                   <i class="bi bi-box-seam"></i>
                 </div>
-                <h3 class="mb-3">Package Transpiracy</h3>
+                <h3 class="mb-3">Select your preferred dispatcher</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+                  optio.
+                </p>
+              </div>
+            </div>
+             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-1 text-center">
+                <div class="wrap-icon icon-1">
+                  <i class="bi bi-box-seam"></i>
+                </div>
+                <h3 class="mb-3">Earn Koogah-coin to deliver more packages</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+                  optio.
+                </p>
+              </div>
+            </div>
+             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-1 text-center">
+                <div class="wrap-icon icon-1">
+                  <i class="bi bi-box-seam"></i>
+                </div>
+                <h3 class="mb-3">Save Time and Money</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
                   optio.
@@ -193,7 +229,7 @@
             <div class="col-md-4">
               <div class="step">
                 <span class="number">02</span>
-                <h3>Create Profile</h3>
+                <h3>Top-up account</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
                   optio.
@@ -203,7 +239,7 @@
             <div class="col-md-4">
               <div class="step">
                 <span class="number">03</span>
-                <h3>Enjoy the app</h3>
+                <h3>Create A Package</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
                   optio.
@@ -277,8 +313,8 @@
             <div
               class="col-md-6 me-auto text-center text-md-start mb-5 mb-md-0"
             >
-              <h1 class="text-white">Coming Soon</h1>
-              <p class="text-white">
+              <h1 class="text-black">Coming Soon</h1>
+              <p class="text-black">
                 We're working hard to improve our website and we'll be ready to
                 launch after
               </p>
@@ -351,7 +387,7 @@
               <div class="col-md-4 mb-4 mb-md-0">
                 <h3 class="text-white">Navigation</h3>
                 <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Become a customer</a></li>
+                  <li><a href="#" class="text-white">Become a Dispatcher</a></li>
                   <li><a href="#" class="text-white">FAQ</a></li>
                   <li><a href="#" class="text-white">Contact</a></li>
                 </ul>
@@ -361,7 +397,6 @@
                 <ul class="list-unstyled">
                   <li><a href="#" class="text-white">Team</a></li>
                   <li><a href="#" class="text-white">Collaboration</a></li>
-                  <li><a href="#" class="text-white">Todos</a></li>
                   <li><a href="#" class="text-white">Events</a></li>
                 </ul>
               </div>
