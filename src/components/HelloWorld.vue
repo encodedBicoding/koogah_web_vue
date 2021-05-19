@@ -131,7 +131,7 @@
                 </div>
                 <h3 class="mb-3">Same Day Delivery</h3>
                 <p>
-                 Your package is of utmost prority, with dispatchers strongly serving our one-customer-per delivery system, Koogah is determined to guarantee a same day delivery.
+                 Your package is of utmost priority, with dispatchers strongly serving our one-customer-per delivery system, Koogah is determined to guarantee same day delivery.
                 
                 </p>
               </div>
@@ -155,7 +155,7 @@
                 </div>
                 <h3 class="mb-3">Real-time Tracking and Location Analysis</h3>
                 <p>
-                 Your packages literally never leave your sight. With Koogah's Tracking Technology, you watch your packages move every step of the way. Control is everything. You now have true Control.
+                 Your packages literally never leave your sight. With Koogah's tracking technology, you watch your packages move every step of the way. Control is everything. You now have true control.
                 </p>
               </div>
             </div>
@@ -166,7 +166,7 @@
                 </div>
                 <h3 class="mb-3">Select your preferred dispatcher</h3>
                 <p>
-              With the control you now have, you decide who picks and delivers your package. 
+              With the control you now have, you decide who picks up and delivers your package. 
                 </p>
               </div>
             </div>
@@ -177,7 +177,7 @@
                 </div>
                 <h3 class="mb-3">Earn Koogah-coin to deliver more packages</h3>
                 <p>
-              Everytime you top up your wallet, our cashback system offers you Koogah coin which enables you deliver packages for free
+              Everytime you top up your wallet, our cashback system offers you Koogah coin which enables you deliver packages for free.
 
                 </p>
               </div>
@@ -189,7 +189,7 @@
                 </div>
                 <h3 class="mb-3">Save Time and Money</h3>
                 <p>
-                  Koogah offers you the most time efficient and cost effective method. With a few clicks, you never have to worry about anything. Koogah gives you that Control.
+                  Koogah offers you the most time efficient and cost effective method. With a few clicks, you never have to worry about anything. Koogah gives you that control.
             
                 </p>
               </div>
@@ -200,18 +200,18 @@
 
       <section class="section">
         <div class="container">
-          <div
+          <!-- <div
             class="row justify-content-center text-center mb-5"
             data-aos="fade"
           >
             <div class="col-md-6 mb-5">
               <img
-                src="../assets/img/undraw_svg_1.svg"
+                src="../assets/img/Koogah_illus-logisticGuy.svg"
                 alt="Image"
                 class="img-fluid"
               />
             </div>
-          </div>
+          </div> -->
 
           <div class="row">
             <div class="col-md-4">
@@ -219,7 +219,7 @@
                 <span class="number">01</span>
                 <h3>Sign Up</h3>
                 <p>
-                  Sign up to get a free Koogah wallet on the web, iOS and Android devices.                </p>
+                                </p>
               </div>
             </div>
             <div class="col-md-4">
@@ -236,25 +236,21 @@
                 <span class="number">03</span>
                 <h3>Create A Package</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
+                  
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
+<!-- 
       <section class="section">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-4 me-auto">
               <h2 class="mb-4">Seamlessly Communicate</h2>
               <p class="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tenetur at reprehenderit optio, laudantium eius quod, eum maxime
-                molestiae porro omnis. Dolores aspernatur delectus impedit
-                incidunt dolore mollitia esse natus beatae.
+                
               </p>
               <p>
                 <a href="#" class="btn btn-primary download"
@@ -271,18 +267,15 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-4 ms-auto order-2">
               <h2 class="mb-4">Gather Feedback</h2>
               <p class="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tenetur at reprehenderit optio, laudantium eius quod, eum maxime
-                molestiae porro omnis. Dolores aspernatur delectus impedit
-                incidunt dolore mollitia esse natus beatae.
+                
               </p>
               <p>
                 <a href="#" class="btn btn-primary download"
@@ -299,7 +292,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- ======= CTA Section ======= -->
       <section class="section cta-section" id="head">
