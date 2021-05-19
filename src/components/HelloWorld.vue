@@ -131,8 +131,8 @@
                 </div>
                 <h3 class="mb-3">Same Day Delivery</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
+                 Your package is of utmost prority, with dispatchers strongly serving our one-customer-per delivery system, Koogah is determined to guarantee a same day delivery.
+                
                 </p>
               </div>
             </div>
@@ -143,8 +143,8 @@
                 </div>
                 <h3 class="mb-3">Faster Pickup Time</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
+                  Access speed time pick up with Koogah's algorithms and market place feed system and a vast number of dispatchers.
+
                 </p>
               </div>
             </div>
@@ -155,8 +155,7 @@
                 </div>
                 <h3 class="mb-3">Real-time Tracking and Location Analysis</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
+                 Your packages literally never leave your sight. With Koogah's Tracking Technology, you watch your packages move every step of the way. Control is everything. You now have true Control.
                 </p>
               </div>
             </div>
@@ -167,8 +166,7 @@
                 </div>
                 <h3 class="mb-3">Select your preferred dispatcher</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
+              With the control you now have, you decide who picks and delivers your package. 
                 </p>
               </div>
             </div>
@@ -179,8 +177,8 @@
                 </div>
                 <h3 class="mb-3">Earn Koogah-coin to deliver more packages</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
+              Everytime you top up your wallet, our cashback system offers you Koogah coin which enables you deliver packages for free
+
                 </p>
               </div>
             </div>
@@ -191,8 +189,8 @@
                 </div>
                 <h3 class="mb-3">Save Time and Money</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
+                  Koogah offers you the most time efficient and cost effective method. With a few clicks, you never have to worry about anything. Koogah gives you that Control.
+            
                 </p>
               </div>
             </div>
@@ -221,9 +219,7 @@
                 <span class="number">01</span>
                 <h3>Sign Up</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
-                </p>
+                  Sign up to get a free Koogah wallet on the web, iOS and Android devices.                </p>
               </div>
             </div>
             <div class="col-md-4">
@@ -231,8 +227,7 @@
                 <span class="number">02</span>
                 <h3>Top-up account</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
-                  optio.
+                  
                 </p>
               </div>
             </div>
@@ -371,9 +366,7 @@
           <div class="col-md-4 mb-4 mb-md-0">
             <h3 class="text-white">About Koogah</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ea
-              delectus pariatur, numquam aperiam dolore nam optio dolorem
-              facilis itaque voluptatum recusandae deleniti minus animi.
+              Koogah is a mobile-first logistics and courier service platform, with the aim to solve same day issues, while giving our customers ability to be with their packages from the comfort of their homes.
             </p>
             <p class="social">
               <a href="#" class="me-2"><span class="bi bi-twitter"></span></a>
@@ -429,5 +422,8 @@
 import Countdown from "vuejs-countdown";
 export default {
   components: { Countdown },
+  mounted: () => {
+    document.title = 'Koogah - Logistics Done Efficiently'
+  }
 };
 </script>
