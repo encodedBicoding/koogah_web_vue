@@ -1,26 +1,33 @@
 .brand {
-  background-color: #F29B38;
+  background-color: #f29b38;
 }
 
 .light {
-  background-color: #FFCC68;
+  background-color: #ffcc68;
 }
 
 .dark {
-  background-color: #E29121;
+  background-color: #e29121;
 }
 
 .dark-brand {
   background-color: #212121;
 }
 .text-brand {
-  color: #212121 !important
+  color: #212121 !important;
 }
 .text-black {
   color: #000000 !important;
 }
 .text-bold {
   font-weight: 900;
+}
+.txt-dark {
+  color: #e29121;
+}
+
+.btn-deep {
+  background-color: #f29b38 !important;
 }
 
 .dark-light {
@@ -32,13 +39,13 @@
 }
 
 .white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .light-grey {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .grey {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
