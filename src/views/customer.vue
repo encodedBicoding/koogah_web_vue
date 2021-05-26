@@ -58,34 +58,7 @@
               aria-describedby="basic-addon1"
             />
           </div>
-          <div class="col-md-6">
-            <div class="input-group mb-4 col">
-              <span class="input-group-text" id="basic-addon1"
-                ><i class="bi bi-cash fs-5"></i
-              ></span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="BVN"
-                aria-label="bvn"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="input-group mb-4 col">
-              <span class="input-group-text" id="basic-addon1"
-                ><i class="bi bi-flag fs-5"></i
-              ></span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="NIN"
-                aria-label="nin"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-          </div>
+
           <div class="input-group mb-4">
             <span class="input-group-text" id="basic-addon1"
               ><i class="bi bi-flag-fill fs-5"></i>
@@ -133,8 +106,8 @@
             <span class="txt-dark">Terms of Service.</span>
           </p>
           <div>
-            <p class="mb-0">Become a customer instead?</p>
-            <router-link to="/register/customer"
+            <p class="mb-0">Become a dispatcher instead?</p>
+            <router-link to="/register/dispatcher"
               ><span class="txt-dark">SIGN UP</span></router-link
             >
           </div>
