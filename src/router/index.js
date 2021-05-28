@@ -9,29 +9,24 @@ const routes = [
     name: "landing",
     component: () => import("../views/index.vue"),
   },
-  {
-    path: "/register",
-    component: () => import("../layout/registerRoute"),
-    children: [
-      {
-        path: "dispatcher",
-        name: "dispatch",
-        component: () => import("../views/dispatch.vue"),
-      },
-      {
-        path: "customer",
-        name: "customer",
-
-        component: () => import("../views/customer.vue"),
-      },
-    ],
-  },
 
   {
     path: "/dispatcher",
-    name: "Dispatch",
-
+    name: "dispatch",
     component: () => import("../views/dispatch.vue"),
+  },
+  {
+    path: "/customer",
+    name: "customer",
+
+    component: () => import("../views/customer.vue"),
+  },
+
+  {
+    path: "/register",
+    name: "rogister",
+
+    component: () => import("../components/registerRoute"),
   },
 ];
 

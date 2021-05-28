@@ -6,7 +6,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
           <h1>
-            <a href="index.html">
+            <a href="/">
               <img src="../assets/img/app_logo.svg" alt="Koogah Logo" />
             </a>
           </h1>
@@ -27,8 +27,8 @@
             <a class="nav-link active text-black text-bold" href="/">
               <h6>Home</h6>
             </a>
-            <a class="nav-link text-black" href="/dispatcher">
-              <h6>Become a Dispatcher</h6>
+            <a class="nav-link text-black" href="/register">
+              <h6>Register</h6>
             </a>
             <a class="nav-link text-black" href="#">
               <h6>FAQ</h6>

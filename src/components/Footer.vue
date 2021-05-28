@@ -30,11 +30,15 @@
               </ul>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
-              <h3 class="text-white">Services</h3>
+              <h3 class="text-white">Contact Us</h3>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Team</a></li>
-                <li><a href="#" class="text-white">Collaboration</a></li>
-                <li><a href="#" class="text-white">Events</a></li>
+                <li><i class="bi bi-telephone-fill me-2"></i>08149332331</li>
+                <li>
+                  <i class="bi bi-envelope-fill me-2"></i
+                  ><a href="mailto:contact@koogah.com" class="text-white"
+                    >contact@koogah.com</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
