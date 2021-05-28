@@ -1,5 +1,65 @@
 @import "theme.css";
-@import "app.css";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+
+a:hover {
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.container {
+  z-index: 2;
+  position: relative;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-primary {
+  color: #2d71a1 !important;
+}
+
+.border-top {
+  border-top: 1px solid #f2f2f2 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #f2f2f2 !important;
+}
+
+figure figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.8rem;
+}
 
 .navbar {
   padding: 0;
@@ -42,17 +102,8 @@
   color: #fff;
 }
 
-/* .hero-section {
-  background: linear-gradient(
-      to right,
-      rgba(229, 170, 128, 1) 0%,
-      rgba(242, 155, 56, 1) 100%
-    ),
-    url(../img/hero-bg.jpg);
-  position: relative;
-} */
 .hero-section {
-  background:#F29B38;
+  background: #f29b38;
   position: relative;
 }
 
@@ -98,6 +149,12 @@ a {
   line-height: 0;
 }
 
+/* Default btn sre-tyling */
+.btn {
+  border: none;
+  padding: 10px 23px !important;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -127,6 +184,138 @@ a {
   padding: 0 !important;
   margin: 0 !important;
   max-height: 40px !important;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+.hero-section .wave {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  bottom: -150px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section .wave {
+    bottom: -180px;
+  }
+}
+
+.hero-section .wave svg {
+  width: 100%;
+}
+
+.hero-section,
+.hero-section > .container > .row {
+  height: 100vh;
+  min-height: 880px;
+}
+
+.hero-section.inner-page {
+  height: 60vh;
+  min-height: 0;
+}
+
+.hero-section.inner-page .hero-text {
+  transform: translateY(-150px);
+  margin-top: -120px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section.inner-page .hero-text {
+    margin-top: -80px;
+  }
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section .hero-text-image {
+    margin-top: 4rem;
+  }
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.hero-section .iphone-wrap {
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section .iphone-wrap {
+    text-align: center;
+  }
+}
+
+.hero-section .iphone-wrap .phone-2,
+.hero-section .iphone-wrap .phone-1 {
+  position: absolute;
+  top: -55%;
+  overflow: hidden;
+  left: -25px;
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+.hero-section .iphone-wrap .phone-2 {
+  left: 70px;
+}
+.hero-section .iphone-wrap .phone-2,
+.hero-section .iphone-wrap .phone-1 {
+  width: 270px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section .iphone-wrap .phone-2,
+  .hero-section .iphone-wrap .phone-1 {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+}
+
+.hero-section .iphone-wrap .phone-2,
+.hero-section .iphone-wrap .phone-1 {
+  width: 250px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section .iphone-wrap .phone-1 {
+    margin-left: -150px;
+  }
+}
+
+.hero-section .iphone-wrap .phone-2 {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 250px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-section .iphone-wrap .phone-2 {
+    width: 250px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -231,8 +420,6 @@ a {
 }
 
 .step .number {
-  background: linear-gradient(-45deg, #1391a5, #274685);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -249,15 +436,7 @@ section {
 }
 
 .section {
-  padding: 7rem 0;
-}
-
-.section-heading {
-  font-size: 3rem;
-  font-weight: 700;
-  background: #000000;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding: 7rem 0 2rem 0;
 }
 
 /* Countdown */
@@ -272,7 +451,7 @@ section {
   width: 100px !important;
   padding: 15px 0 !important;
   background: rgba(100, 99, 99, 0.048);
-  border-top: 5px solid #F29B38;
+  border-top: 5px solid #f29b38;
 }
 
 .countdown li p {
@@ -287,13 +466,12 @@ section {
 }
 
 .vuejs-countdown li:after {
-    content: "" !important;
-    position: absolute;
-    top: 0;
-    right: -13px;
-    font-size: 32px;
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  right: -13px;
+  font-size: 32px;
 }
-
 
 @media (max-width: 575px) {
   .countdown li {
@@ -309,4 +487,52 @@ section {
     font-size: 14px;
     font-weight: 500;
   }
+}
+
+.btn-sign {
+  box-shadow: 0px 1px 3px #00000033;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.bg-register {
+  top: 226px;
+  left: 15px;
+  width: 643px;
+  box-shadow: 2px 9px 20px 8px #00000029;
+  border-radius: 4px;
+  opacity: 1;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.txt-register {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.form-select {
+  background-color: #f29b38 !important;
+  border: 1px solid #f29b38 !important;
+}
+
+.form-control {
+  border-color: #000000 !important;
+  border-left: solid 1px #f29b38 !important;
+}
+.form-control:focus {
+  border-color: #f29b38 !important;
+}
+
+.form-control::placeholder {
+  font-family: "PT Sans Narrow", sans-serif !important;
+  font-size: 17px;
+  color: #000 !important;
+}
+
+.input-group-text {
+  border-color: #f29b38 !important;
+  background-color: #f29b38 !important;
+}
+
+input:focus {
+  outline: none !important;
 }
