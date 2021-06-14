@@ -24,9 +24,15 @@ const routes = [
 
   {
     path: "/register",
-    name: "rogister",
+    name: "register",
 
     component: () => import("../components/registerRoute"),
+  },
+  {
+    path: "/privacy-policy",
+    name: "privacy",
+
+    component: () => import("../views/privacy.vue"),
   },
 ];
 
