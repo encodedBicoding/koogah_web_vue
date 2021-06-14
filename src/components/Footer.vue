@@ -27,6 +27,7 @@
                 </li>
                 <li><a href="#" class="text-white">FAQ</a></li>
                 <li><a href="#" class="text-white">Contact</a></li>
+                <li><a href="/privacy-policy" class="text-white">Privacy</a></li>
               </ul>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
