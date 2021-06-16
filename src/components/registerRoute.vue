@@ -125,5 +125,12 @@ import Footer from "./Footer";
 import Header from "./Header";
 export default {
   components: { Header, Footer },
+  mounted() {
+    if(window.location.search) {
+    let query = new URLSearchParams(window.location.search);
+    let ref = query.get('ref');
+    window.sessionStorage.setItem('ref', ref)
+    }
+  }
 };
 </script>
