@@ -16,6 +16,35 @@
             below to create an account
           </p>
         </div>
+        <div>
+          <input
+            type="file"
+            ref="fileInput"
+            name="image"
+            class="d-none"
+            @change="onChange"
+            accept="image/*"
+          />
+          <div class="d-flex mb-3 position-relative">
+            <i
+              class="
+                rounded-circle
+                bg-white
+                text-primary
+                bi bi-camera
+                fs-4
+                move
+              "
+              @click="selectImage"
+            ></i>
+            <img
+              :src="dispatch.profile_image"
+              class="rounded-circle"
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
         <form class="row">
           <div class="input-group mb-4">
             <span class="input-group-text" id="basic-addon1"
@@ -276,7 +305,10 @@ export default {
   components: { Header },
   data() {
     return {
+      profile: null,
+
       dispatch: {
+        profile_image: require("../assets/img/avatar.png"),
         first_name: "",
         last_name: "",
         email: "",
@@ -296,10 +328,32 @@ export default {
     };
   },
   methods: {
-    ...mapActions({ sign: "account/register" }),
-
-    register() {
-      this.sign(this.dispatch);
+    ...mapActions({
+      signup: "account/register",
+      uploadImage: "account/uploadPicture",
+    }),
+    selectImage() {
+      this.$refs.fileInput.click();
+    },
+    onChange(e) {
+      const file = e.target.files[0];
+      this.createImage(file);
+    },
+    createImage(file) {
+      this.profile = file;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        this.dispatch.profile_image = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    },
+    async register() {
+      const ImageData = new FormData();
+      ImageData.append("profile", this.profile);
+      const res = await this.uploadImage(ImageData);
+      this.dispatch.profile_image = res.data.data.secure_url;
+      this.signup(this.dispatch);
+      this.dispatch = null;
     },
   },
   computed: {
@@ -315,3 +369,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.move {
+  position: absolute;
+  bottom: 8px;
+  left: 90px;
+  /* padding: 2px; */
+  border-radius: 6px;
+}
+</style>
