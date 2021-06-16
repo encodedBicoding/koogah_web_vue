@@ -510,8 +510,8 @@ section {
 }
 
 .form-select {
-  background-color: #f29b38 !important;
-  border: 1px solid #f29b38 !important;
+  /* background-color: #f29b38 !important;
+  border: 1px solid #f29b38 !important; */
 }
 
 .form-control {

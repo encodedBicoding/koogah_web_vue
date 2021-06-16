@@ -10,8 +10,19 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import swiper from "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
 import icon from "./assets/vendor/boxicons/css/boxicons.min.css";
+import axios from "axios";
+import VueToast from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-sugar.css';
 
 Vue.config.productionTip = false;
+
+window.axios = axios;
+
+Vue.use(VueToast, {
+  // One of the options
+  position: 'top-right',
+  duration: 10000
+})
 
 AOS.init({
   duration: 1000,
@@ -65,5 +76,6 @@ new Vue({
   Toast,
   Tooltip,
   Popover,
+  VueToast,
   render: (h) => h(App),
 }).$mount("#app");
