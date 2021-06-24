@@ -23,11 +23,13 @@
               <h3 class="text-white">Navigation</h3>
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="text-white">Become a Dispatcher</a>
+                  <a href="/dispatcher" class="text-white">Become a Dispatcher</a>
                 </li>
                 <li><a href="#" class="text-white">FAQ</a></li>
-                <li><a href="#" class="text-white">Contact</a></li>
-                <li><a href="/privacy-policy" class="text-white">Privacy</a></li>
+                <li><a href="mailto:contact@koogah.com" class="text-white">Contact</a></li>
+                <li>
+                  <a href="/privacy-policy" class="text-white">Privacy</a>
+                </li>
               </ul>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">

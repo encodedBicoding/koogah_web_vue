@@ -13,11 +13,10 @@ import icon from "./assets/vendor/boxicons/css/boxicons.min.css";
 import axios from "axios";
 import VueToast from "vue-toast-notification";
 import "vue-toast-notification/dist/theme-sugar.css";
+import Vuelidate from "vuelidate";
 
+Vue.use(Vuelidate);
 Vue.config.productionTip = false;
-
-window.axios = axios;
-
 Vue.use(VueToast, {
   // One of the options
   position: "top-right",
@@ -30,6 +29,8 @@ AOS.init({
   once: true,
   mirror: false,
 });
+
+window.axios = axios;
 
 /**
  * Easy selector helper function
