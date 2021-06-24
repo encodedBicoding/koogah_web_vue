@@ -107,7 +107,7 @@
           </p>
           <div>
             <p class="mb-0">Become a dispatcher instead?</p>
-            <router-link to="/register/dispatcher"
+            <router-link to="/dispatcher"
               ><span class="txt-dark">SIGN UP</span></router-link
             >
           </div>

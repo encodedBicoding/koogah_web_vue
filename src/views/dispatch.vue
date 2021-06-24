@@ -16,277 +16,323 @@
             below to create an account
           </p>
         </div>
-        <div>
-          <input
-            type="file"
-            ref="fileInput"
-            name="image"
-            class="d-none"
-            @change="onChange"
-            accept="image/*"
-          />
-          <div class="d-flex mb-3 position-relative">
-            <i
-              class="
-                rounded-circle
-                bg-white
-                text-primary
-                bi bi-camera
-                fs-4
-                move
-              "
-              @click="selectImage"
-            ></i>
-            <img
-              :src="dispatch.profile_image"
-              class="rounded-circle"
-              width="100"
-              height="100"
-            />
-          </div>
-        </div>
-        <form class="row">
-          <div class="input-group mb-4">
-            <span class="input-group-text" id="basic-addon1"
-              ><i class="bi bi-person-fill fs-5"></i
-            ></span>
+        <div >
+          <div>
             <input
-              v-model="dispatch.first_name"
-              type="text"
-              class="form-control"
-              placeholder="First name"
-              aria-label="firstname"
-              aria-describedby="basic-addon1"
+              type="file"
+              ref="fileInput"
+              name="image"
+              class="d-none"
+              @change="onChange"
+              accept="image/*"
             />
+            <div class="d-flex mb-3 position-relative">
+              <i
+                class="
+                  rounded-circle
+                  bg-white
+                  text-primary
+                  bi bi-camera
+                  fs-4
+                  move
+                "
+                @click="selectImage"
+              ></i>
+              <img
+                :src="dispatch.profile_image"
+                class="rounded-circle"
+                width="100"
+                height="100"
+              />
+            </div>
           </div>
+          <form class="row">
+            <div class="input-group mb-4">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="bi bi-person-fill fs-5"></i
+              ></span>
+              <input
+                v-model="dispatch.first_name"
+                type="text"
+                class="form-control"
+                placeholder="First name"
+                aria-label="firstname"
+                aria-describedby="basic-addon1"
+              />
+            </div>
 
-          <div class="input-group mb-4">
-            <span class="input-group-text" id="basic-addon1"
-              ><i class="bi bi-person-fill fs-5"></i
-            ></span>
-            <input
-              v-model="dispatch.last_name"
-              type="text"
-              class="form-control"
-              placeholder="Last name"
-              aria-label="lastname"
-              aria-describedby="basic-addon1"
-            />
-          </div>
+            <div class="input-group mb-4">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="bi bi-person-fill fs-5"></i
+              ></span>
+              <input
+                v-model="dispatch.last_name"
+                type="text"
+                class="form-control"
+                placeholder="Last name"
+                aria-label="lastname"
+                aria-describedby="basic-addon1"
+              />
+            </div>
 
-          <div class="input-group mb-4">
-            <span class="input-group-text" id="basic-addon1"
-              ><i class="bi bi-envelope-fill fs-5"></i
-            ></span>
-            <input
-              v-model="dispatch.email"
-              type="email"
-              class="form-control"
-              placeholder="Email"
-              aria-label="email"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-
-          <div class="input-group mb-4">
-            <span class="input-group-text" id="basic-addon1"
-              ><i class="bi bi-flag-fill fs-5"></i>
-              <p>+234</p>
-            </span>
-
-            <input
-              v-model="dispatch.mobile_number"
-              type="text"
-              class="form-control"
-              placeholder="Phone number"
-              aria-label="phonenumber"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-
-          <div class="input-group mb-4">
-            <span class="input-group-text" id="basic-addon1"
-              ><i class="bi bi-flag-fill fs-5"></i
-            ></span>
-            <input
-              v-model="dispatch.nationality"
-              type="text"
-              class="form-control"
-              placeholder="Nationality"
-              aria-label="lastname"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-
-          <div class="input-group">
-            <select
-              class="form-select mb-3"
-              aria-label="example"
-              v-model="dispatch.sex"
-            >
-              <option disabled value="">Gender</option>
-              <option value="M">Male</option>
-              <option value="F">Female</option>
-            </select>
-          </div>
-
-          <div class="input-group">
-            <select
-              class="form-select mb-3"
-              aria-label="example"
-              v-model="dispatch.state"
-            >
-              <option disabled value="">State of residence</option>
-              <option v-for="state in states" :key="state">
-                {{ state }}
-              </option>
-            </select>
-          </div>
-
-          <div class="input-group">
-            <select
-              class="form-select mb-3"
-              aria-label="example"
-              v-model="dispatch.town"
-            >
-              <option disabled value="">City/Town</option>
-              <option v-for="city in town.lgas" :key="city">{{ city }}</option>
-            </select>
-          </div>
-
-          <div class="input-group mb-4">
-            <span class="input-group-text" id="basic-addon1"
-              ><i class="bi bi-key-fill fs-5"></i
-            ></span>
-            <input
-              v-model="dispatch.address"
-              type="text"
-              class="form-control"
-              placeholder="Address"
-              aria-label="address"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="input-group mb-4 col">
+            <div class="mb-4">
+              <div class="input-group">
                 <span class="input-group-text" id="basic-addon1"
-                  ><i class="bi bi-cash fs-5"></i
+                  ><i class="bi bi-envelope-fill fs-5"></i
                 ></span>
                 <input
-                  v-model="dispatch.bvn"
-                  type="text"
+                  v-model="dispatch.email"
+                  type="email"
                   class="form-control"
-                  placeholder="BVN"
-                  aria-label="bvn"
+                  placeholder="Email"
+                  aria-label="email"
                   aria-describedby="basic-addon1"
                 />
               </div>
+
+              <span v-if="dispatch.errors().has('email')" class="text-danger">
+                {{ dispatch.errors().get("email") }}
+              </span>
             </div>
-            <div class="col-md-6">
-              <div class="input-group mb-4 col">
+
+            <div class="mb-4">
+              <div class="input-group">
                 <span class="input-group-text" id="basic-addon1"
-                  ><i class="bi bi-flag fs-5"></i
-                ></span>
+                  ><i class="bi bi-flag-fill fs-5"></i>
+                  <p>+234</p>
+                </span>
+
                 <input
-                  v-model="dispatch.identification_number"
+                  v-model="dispatch.mobile_number"
                   type="text"
                   class="form-control"
-                  placeholder="NIN"
-                  aria-label="nin"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-            <div>
-              <h5>Emergency Contacts</h5>
-              <p>
-                Your safety is important to us. Provide two trusted contacts for
-                emergency purposes.
-              </p>
-            </div>
-            <div class="col-md-6">
-              <div class="input-group mb-4 col">
-                <span class="input-group-text" id="basic-addon1"
-                  ><i class="bi bi-cash fs-5"></i
-                ></span>
-                <input
-                  v-model="dispatch.emergency_contact_one_name"
-                  type="text"
-                  class="form-control"
-                  placeholder="Full Name"
-                  aria-label="fullname"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="input-group mb-4 col">
-                <span class="input-group-text" id="basic-addon1"
-                  ><i class="bi bi-flag fs-5"></i
-                ></span>
-                <input
-                  v-model="dispatch.emergency_contact_one_phone"
-                  type="text"
-                  class="form-control"
-                  placeholder="Phone Number"
-                  aria-label="nin"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-            <hr />
-            <div class="col-md-6">
-              <div class="input-group mb-4 col">
-                <span class="input-group-text" id="basic-addon1"
-                  ><i class="bi bi-cash fs-5"></i
-                ></span>
-                <input
-                  v-model="dispatch.emergency_contact_two_name"
-                  type="text"
-                  class="form-control"
-                  placeholder="Full Name"
-                  aria-label="fullname"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="input-group mb-4 col">
-                <span class="input-group-text" id="basic-addon1"
-                  ><i class="bi bi-flag fs-5"></i
-                ></span>
-                <input
-                  v-model="dispatch.emergency_contact_two_phone"
-                  type="text"
-                  class="form-control"
-                  placeholder="Phone Number"
+                  placeholder="Phone number"
                   aria-label="phonenumber"
                   aria-describedby="basic-addon1"
                 />
               </div>
+              <span
+                v-if="dispatch.errors().has('mobile_number')"
+                class="text-danger"
+              >
+                {{ dispatch.errors().get("mobile_number") }}
+              </span>
             </div>
-          </div>
-          <div class="text-center d-grid gap-2 col-6 mx-auto mb-4">
-            <button
-              type="submit"
-              class="btn btn-deep btn-block txt-register btn-sign"
-              @click.prevent="register"
-            >
-              SIGN UP
-            </button>
-          </div>
-        </form>
+
+            <div class="input-group mb-4">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="bi bi-flag-fill fs-5"></i
+              ></span>
+              <input
+                disabled
+                v-model="dispatch.nationality"
+                type="text"
+                class="form-control"
+                placeholder="Nationality"
+                aria-label="lastname"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group">
+              <select
+                class="form-select mb-3"
+                aria-label="example"
+                v-model="dispatch.sex"
+              >
+                <option disabled value="">Gender</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <select
+                class="form-select mb-3"
+                aria-label="example"
+                v-model="dispatch.state"
+              >
+                <option disabled value="">State of residence</option>
+                <option v-for="state in states" :key="state">
+                  {{ state }}
+                </option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <select
+                class="form-select mb-3"
+                aria-label="example"
+                v-model="dispatch.town"
+              >
+                <option disabled value="">City/Town</option>
+                <option v-for="city in town.lgas" :key="city">
+                  {{ city }}
+                </option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <form>
+            <div class="input-group mb-4">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="bi bi-key-fill fs-5"></i
+              ></span>
+              <input
+                v-model="dispatch.address"
+                type="text"
+                class="form-control"
+                placeholder="Address"
+                aria-label="address"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="input-group col">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="bi bi-cash fs-5"></i
+                  ></span>
+                  <input
+                    v-model="dispatch.bvn"
+                    type="text"
+                    class="form-control"
+                    placeholder="BVN"
+                    aria-label="bvn"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <span v-if="dispatch.errors().has('bvn')" class="text-danger">
+                  {{ dispatch.errors().get("bvn") }}
+                </span>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="input-group col">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="bi bi-flag fs-5"></i
+                  ></span>
+                  <input
+                    v-model="dispatch.identification_number"
+                    type="text"
+                    class="form-control"
+                    placeholder="NIN"
+                    aria-label="nin"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <span
+                  v-if="dispatch.errors().has('identification_number')"
+                  class="text-danger"
+                >
+                  {{ dispatch.errors().get("identification_number") }}
+                </span>
+              </div>
+              <div>
+                <h5>Emergency Contacts</h5>
+                <p>
+                  Your safety is important to us. Provide two trusted contacts
+                  for emergency purposes.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-4 col">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="bi bi-cash fs-5"></i
+                  ></span>
+                  <input
+                    v-model="dispatch.emergency_contact_one_name"
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                    aria-label="fullname"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-4 col">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="bi bi-flag fs-5"></i
+                  ></span>
+                  <input
+                    v-model="dispatch.emergency_contact_one_phone"
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                    aria-label="nin"
+                    aria-describedby="basic-addon1"
+                  />
+                  <span
+                    v-if="dispatch.errors().has('emergency_contact_one_phone')"
+                    class="text-danger"
+                  >
+                    {{ dispatch.errors().get("emergency_contact_one_phone") }}
+                  </span>
+                </div>
+              </div>
+              <hr />
+              <div class="col-md-6">
+                <div class="input-group mb-4 col">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="bi bi-cash fs-5"></i
+                  ></span>
+                  <input
+                    v-model="dispatch.emergency_contact_two_name"
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                    aria-label="fullname"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-4 col">
+                  <span class="input-group-text" id="basic-addon1"
+                    ><i class="bi bi-flag fs-5"></i
+                  ></span>
+                  <input
+                    v-model="dispatch.emergency_contact_two_phone"
+                    type="text"
+                    class="form-control"
+                    placeholder="Phone Number"
+                    aria-label="phonenumber"
+                    aria-describedby="basic-addon1"
+                  />
+                  <span
+                    v-if="dispatch.errors().has('emergency_contact_two_phone')"
+                    class="text-danger"
+                  >
+                    {{ dispatch.errors().get("emergency_contact_two_phone") }}
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="text-center d-grid gap-2 col-6 mx-auto mb-4">
+              <button
+                :disabled="dispatch.empty()"
+                type="submit"
+                class="btn btn-deep btn-block txt-register btn-sign"
+                @click.prevent="register"
+              >
+                SIGN UP
+              </button>
+            </div>
+          </form>
+        </div>
+
         <div>
           <p class="text-center mb-0">
             By Signing up, you agree to accept our <br />
-            <span class="txt-dark">Privacy Policy</span> &
+            <a href="/privacy-policy" class="txt-dark">Privacy Policy</a> &
             <span class="txt-dark">Terms of Service.</span>
           </p>
           <div>
             <p class="mb-0">Become a customer instead?</p>
-            <router-link to="/register/customer"
+            <router-link to="/customer"
               ><span class="txt-dark">SIGN UP</span></router-link
             >
           </div>
@@ -299,6 +345,7 @@
 <script>
 import Header from "../components/Header";
 import NaijaStates from "naija-state-local-government";
+import form from "vuejs-form";
 import { mapActions } from "vuex";
 
 export default {
@@ -306,8 +353,8 @@ export default {
   data() {
     return {
       profile: null,
-
-      dispatch: {
+      switch: true,
+      dispatch: form({
         profile_image: require("../assets/img/avatar.png"),
         first_name: "",
         last_name: "",
@@ -317,6 +364,7 @@ export default {
         country_code: "+234",
         emergency_contact_one_name: "",
         emergency_contact_two_name: "",
+        emergency_contact_one_phone: "",
         emergency_contact_two_phone: "",
         mobile_number: "",
         sex: "",
@@ -324,7 +372,14 @@ export default {
         state: "",
         town: "",
         address: "",
-      },
+      }).rules({
+        email: "email|min:5|required",
+        mobile_number: "required|min:10|max:11",
+        bvn: "required|min:11|max:11",
+        identification_number: "required|min:11|max:11",
+        emergency_contact_one_phone: "required|min:10|max:11",
+        emergency_contact_two_phone: "required|min:10|max:11",
+      }),
     };
   },
   methods: {
@@ -348,11 +403,12 @@ export default {
       reader.readAsDataURL(file);
     },
     async register() {
+      if (this.dispatch.validate().errors().any()) return;
       const ImageData = new FormData();
       ImageData.append("profile", this.profile);
       const res = await this.uploadImage(ImageData);
       this.dispatch.profile_image = res.data.data.secure_url;
-      this.signup(this.dispatch);
+      await this.signup(this.dispatch.all());
       this.dispatch = null;
     },
   },
@@ -367,6 +423,7 @@ export default {
       return NaijaStates.lgas(this.dispatch.state);
     },
   },
+  mounted() {},
 };
 </script>
 
@@ -375,7 +432,11 @@ export default {
   position: absolute;
   bottom: 8px;
   left: 90px;
-  /* padding: 2px; */
   border-radius: 6px;
+}
+
+input:focus,
+select:focus {
+  box-shadow: none;
 }
 </style>
