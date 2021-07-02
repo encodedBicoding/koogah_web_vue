@@ -1,5 +1,5 @@
 import axios from "axios";
-import Vue from "vue";
+// import Vue from "vue";
 
 axios.defaults.baseURL = "https://core.koogahapis.com/v1/";
 let ref = window.sessionStorage.getItem("ref");
@@ -10,21 +10,24 @@ const state = {
 };
 
 const actions = {
-  register({ commit }, credentials) {
-    return axios
-      .post(
-        `user/courier/signup?fromApp=web${hasRef ? `&&ref=${ref}` : ""}`,
-        credentials
-      )
-      .then((resp) => {
-        Vue.$toast.success(resp.data.message);
-        commit("SetDispatcher", resp.data.config.data);
-      });
-    // .catch((err) => {
-    //   Vue.$toast.error(err)
+  async register({ commit }, credentials) {
+    const res = await axios.post(
+      `user/courier/signup?fromApp=web${hasRef ? `&&ref=${ref}` : ""}`,
+      credentials
+    );
 
-    // })
+    if (res.status === "success") {
+      commit("SetDispatcher", res.data.config.data);
+    }
+    return res;
   },
+
+  async customerRegister(commit, credentials) {
+    const res = await axios.post("user/customer/signup", credentials);
+    console.log(res);
+    return res;
+  },
+
   async uploadPicture(profile, data) {
     try {
       const response = await axios.put("profile/courier/upload/single", data, {
@@ -50,5 +53,4 @@ export default {
   state,
   actions,
   mutations,
-  // getters,
 };

@@ -17,7 +17,7 @@ a {
   color: #777;
   text-decoration: none;
   transition: 0.3s all ease;
-} 
+}
 
 a:hover {
   color: #f29b38;
@@ -116,14 +116,14 @@ figure figcaption {
   position: relative;
   height: 25rem;
 }
-.content-center{
+.content-center {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: inherit;
 }
-.content-center h1{
+.content-center h1 {
   font-size: 3.5rem;
 }
 
@@ -540,7 +540,6 @@ section {
 }
 .form-control:focus {
   border-color: #f29b38 !important;
-  box-shadow: none;
 }
 
 .form-control::placeholder {
@@ -554,4 +553,6 @@ section {
   background-color: #f29b38 !important;
 }
 
-
+.form-danger:focus {
+  border-color: #f23838 !important;
+}
