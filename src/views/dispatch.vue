@@ -16,7 +16,7 @@
             below to create an account
           </p>
         </div>
-        <div >
+        <div>
           <div>
             <input
               type="file"
@@ -46,7 +46,7 @@
               />
             </div>
           </div>
-          <form class="row">
+          <form class="row" @keyup.enter="register">
             <div class="input-group mb-4">
               <span class="input-group-text" id="basic-addon1"
                 ><i class="bi bi-person-fill fs-5"></i
@@ -313,10 +313,8 @@
             </div>
             <div class="text-center d-grid gap-2 col-6 mx-auto mb-4">
               <button
-                :disabled="dispatch.empty()"
-                type="submit"
-                class="btn btn-deep btn-block txt-register btn-sign"
                 @click.prevent="register"
+                class="btn btn-deep btn-block txt-register btn-sign"
               >
                 SIGN UP
               </button>
@@ -403,13 +401,20 @@ export default {
       reader.readAsDataURL(file);
     },
     async register() {
-      if (this.dispatch.validate().errors().any()) return;
-      const ImageData = new FormData();
-      ImageData.append("profile", this.profile);
-      const res = await this.uploadImage(ImageData);
-      this.dispatch.profile_image = res.data.data.secure_url;
-      await this.signup(this.dispatch.all());
-      this.dispatch = null;
+      try {
+        if (this.dispatch.validate().errors().any()) return;
+
+        const ImageData = new FormData();
+        ImageData.append("profile", this.profile);
+        const res = await this.uploadImage(ImageData);
+        this.dispatch.profile_image = res.data.data.secure_url;
+
+        const response = await this.signup(this.dispatch.all());
+        this.$toast.success(response.data.message);
+        this.dispatch = null;
+      } catch (err) {
+        console.log(err);
+      }
     },
   },
   computed: {
