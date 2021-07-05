@@ -11,9 +11,17 @@
             ability to be with their packages from the comfort of their homes.
           </p>
           <p class="social">
-            <a href="#" class="me-2"><span class="bi bi-twitter"></span></a>
-            <a href="#" class="me-2"><span class="bi bi-facebook"></span></a>
-            <a href="#" class="me-2"><span class="bi bi-instagram"></span></a>
+            <a href="https://mobile.twitter.com/thekoogahbrand" class="me-2"
+              ><span class="bi bi-twitter"></span
+            ></a>
+            <a
+              href="https://mobile.facebook.com/The-Koogah-Brand-103785431972912/"
+              class="me-2"
+              ><span class="bi bi-facebook"></span
+            ></a>
+            <a href="https://www.instagram.com/thekoogahbrand/" class="me-2"
+              ><span class="bi bi-instagram"></span
+            ></a>
             <a href="#" class="me-2"><span class="bi bi-linkedin"></span></a>
           </p>
         </div>
@@ -23,10 +31,16 @@
               <h3 class="text-white">Navigation</h3>
               <ul class="list-unstyled">
                 <li>
-                  <a href="/dispatcher" class="text-white">Become a Dispatcher</a>
+                  <a href="/dispatcher" class="text-white"
+                    >Become a Dispatcher</a
+                  >
                 </li>
                 <li><a href="#" class="text-white">FAQ</a></li>
-                <li><a href="mailto:contact@koogah.com" class="text-white">Contact</a></li>
+                <li>
+                  <a href="mailto:contact@koogah.com" class="text-white"
+                    >Contact</a
+                  >
+                </li>
                 <li>
                   <a href="/privacy-policy" class="text-white">Privacy</a>
                 </li>
@@ -48,10 +62,18 @@
               <h3 class="text-white">Downloads</h3>
               <ul class="list-unstyled">
                 <li>
-                  <a href="#" class="text-white">Get from the App Store</a>
+                  <a
+                    href="https://apps.apple.com/ng/app/koogah-customer/id1562395555"
+                    class="text-white"
+                    >Get from the App Store</a
+                  >
                 </li>
                 <li>
-                  <a href="#" class="text-white">Get from the Play Store</a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.koogah.dispatcher"
+                    class="text-white"
+                    >Get from the Play Store</a
+                  >
                 </li>
               </ul>
             </div>
