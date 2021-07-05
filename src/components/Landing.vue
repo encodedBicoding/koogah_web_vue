@@ -13,11 +13,12 @@
                 <h1 data-aos="fade-right" class="text-black">
                   A complete solution to logistics and package delivery.
                 </h1>
+                <p class="text-black">Koogah - Logistics done efficiently</p>
                 <div class="col-md-5">
                   <h6>Download on</h6>
                   <p>
                     <a
-                      href="#"
+                      href="https://apps.apple.com/ng/app/koogah-customer/id1562395555"
                       class="btn btn-dark d-inline-flex align-items-center me-2"
                       ><i class="bx bxl-apple fs-3"></i
                       ><span>App store</span></a
@@ -197,18 +198,18 @@
                 launch after
               </p>
               <div class="countdown d-flex justify-content-center">
-                <Countdown end="August 22, 2021"></Countdown>
+                <Countdown end="July 12, 2021"></Countdown>
               </div>
             </div>
             <div class="col-md-5 text-center text-md-end">
               <p>
                 <a
-                  href="#"
+                  href="https://apps.apple.com/ng/app/koogah-dispatcher/id1562732355"
                   class="btn btn-dark d-inline-flex align-items-center me-2"
                   ><i class="bx bxl-apple"></i><span>App store</span></a
                 >
                 <a
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.koogah.dispatcher"
                   class="btn btn-dark d-inline-flex align-items-center"
                   ><i class="bx bxl-play-store"></i><span>Google play</span></a
                 >

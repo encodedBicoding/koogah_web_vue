@@ -7,13 +7,12 @@
     >
       <div class="bg-register p-4">
         <div class="text-center mb-5">
-          <p class="fs-3">
-            Register, <br />
-            Let’s get to know you
+          <p class="fs-3 mb-0">
+            <b> Register, Let’s get to know you </b>
           </p>
-          <p class="txt-register mb-0">
-            We are glad you are here, fill in the fields <br />
-            below to create an account
+          <p class="txt-register mb-0 text-muted">
+            We are glad you are here, fill in the fields below to create an
+            account
           </p>
         </div>
         <form class="row" @keyup.enter="register" @submit.prevent="register">
@@ -78,6 +77,11 @@
               aria-label="email"
               aria-describedby="basic-addon1"
             />
+            <span
+              class="text-danger valid-feedback d-block"
+              v-if="!$v.user.email.email"
+              >Please enter valid number</span
+            >
 
             <!-- <div class="text-danger valid-feedback d-block" v-if="!$v.user.email.required">
               Field is required
@@ -87,7 +91,7 @@
           <div class="input-group mb-4">
             <span class="input-group-text" id="basic-addon1"
               ><i class="bi bi-flag-fill fs-5"></i>
-              <select class="form-select" id="inputGroupSelect01">
+              <select class="form-select select" id="inputGroupSelect01">
                 <option value="1">+234</option>
               </select>
             </span>
@@ -144,7 +148,7 @@
             </div>
           </div>
 
-          <div class="text-center d-grid gap-2 col-6 mx-auto mb-4">
+          <div class="text-center d-grid gap-2 mx-auto mb-2">
             <button
               class="btn btn-deep btn-block txt-register btn-sign"
               type="submit"
@@ -154,12 +158,12 @@
           </div>
         </form>
         <div>
-          <p class="text-center mb-0">
-            By Signing up, you agree to accept our <br />
+          <p class="text-center mb-3 valid-feedback d-block text-muted">
+            By Signing up, you agree to accept our
             <span class="txt-dark">Privacy Policy</span> &
             <span class="txt-dark">Terms of Service.</span>
           </p>
-          <div>
+          <div class="text-center">
             <p class="mb-0">Become a dispatcher instead?</p>
             <router-link to="/dispatcher"
               ><span class="txt-dark">SIGN UP</span></router-link
@@ -180,6 +184,7 @@ import {
   maxLength,
   email,
   numeric,
+  alphaNum,
 } from "vuelidate/lib/validators";
 
 export default {
@@ -218,6 +223,7 @@ export default {
       password: {
         required,
         minLength: minLength(8),
+        alphaNum,
       },
     },
   },

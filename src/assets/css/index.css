@@ -519,7 +519,7 @@ section {
   top: 226px;
   left: 15px;
   width: 643px;
-  box-shadow: 2px 9px 20px 8px #00000029;
+  box-shadow: 2px 9px 20px 8px #0000000a;
   border-radius: 4px;
   opacity: 1;
   font-family: "PT Sans Narrow", sans-serif;
@@ -535,8 +535,9 @@ section {
 }
 
 .form-control {
-  border-color: #000000 !important;
-  border-left: solid 1px #f29b38 !important;
+  border-color: #b9b9b9 !important;
+  border-left: none !important;
+  /* padding-lef: 0px !important; */
 }
 .form-control:focus {
   border-color: #f29b38 !important;
@@ -549,10 +550,23 @@ section {
 }
 
 .input-group-text {
-  border-color: #f29b38 !important;
-  background-color: #f29b38 !important;
+  border-color: #b9b9b9 !important;
+  background-color: transparent !important;
+  padding-right: 0px !important;
+  color: #484848 !important;
 }
 
 .form-danger:focus {
   border-color: #f23838 !important;
+}
+.form-select {
+  border: #b9b9b9 1px solid !important;
+}
+
+.select {
+  border: none !important;
+}
+
+.input-group-text:focus-visible {
+  border-color: red;
 }
