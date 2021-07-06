@@ -70,7 +70,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://play.google.com/store/apps/details?id=com.koogah.dispatcher"
+                    href="https://play.google.com/store/apps/details?id=com.koogah.customer"
                     class="text-white"
                     >Get from the Play Store</a
                   >
