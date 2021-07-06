@@ -24,7 +24,7 @@
                       ><span>App store</span></a
                     >
                     <a
-                      href="#"
+                      href="https://play.google.com/store/apps/details?id=com.koogah.customer"
                       class="btn btn-dark d-inline-flex align-items-center"
                       ><i class="bx bxl-play-store fs-3"></i
                       ><span>Google play</span></a
@@ -204,12 +204,12 @@
             <div class="col-md-5 text-center text-md-end">
               <p>
                 <a
-                  href="https://apps.apple.com/ng/app/koogah-dispatcher/id1562732355"
+                  href="https://apps.apple.com/ng/app/koogah-customer/id1562395555"
                   class="btn btn-dark d-inline-flex align-items-center me-2"
                   ><i class="bx bxl-apple"></i><span>App store</span></a
                 >
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.koogah.dispatcher"
+                  href="https://play.google.com/store/apps/details?id=com.koogah.customer"
                   class="btn btn-dark d-inline-flex align-items-center"
                   ><i class="bx bxl-play-store"></i><span>Google play</span></a
                 >
