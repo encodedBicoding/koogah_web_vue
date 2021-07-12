@@ -23,18 +23,28 @@
             <span class="bi bi-list"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <a class="nav-link active text-black text-bold" href="/">
+            <ul class="navbar-nav rounded">
+              <li class="nav-item">
+                <a class="nav-link active text-black text-bold" href="/">
               <h6>Home</h6>
             </a>
-            <a class="nav-link text-black" href="/register">
+              </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="/register">
               <h6>Register</h6>
             </a>
-            <a class="nav-link text-black" href="#">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">
               <h6>FAQ</h6>
             </a>
-            <a class="nav-link text-black" href="#">
+            </li>
+           <li class="nav-item">
+              <a class="nav-link text-black" href="#">
               <h6>Contact Us</h6>
             </a>
+           </li>
+            </ul>
           </div>
         </nav>
 
@@ -44,3 +54,7 @@
     <!-- End Header -->
   </main>
 </template>
+
+<style scoped>
+
+</style>

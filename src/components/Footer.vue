@@ -6,9 +6,10 @@
         <div class="col-md-4 mb-4 mb-md-0">
           <h3 class="text-white">About Koogah</h3>
           <p>
-            Koogah is a mobile-first logistics and courier service platform,
-            with the aim to solve same day issues, while giving our customers
-            ability to be with their packages from the comfort of their homes.
+            Koogah is a platform which brings a mobile-first solution and a
+            SCPPD(Single Customer Per Package Delivery) system to solving
+            logistics/delivery issues, connecting customers and business owners
+            with dispatchers, and giving them control over their deliveries
           </p>
           <p class="social">
             <a href="https://mobile.twitter.com/thekoogahbrand" class="me-2"
@@ -83,3 +84,29 @@
     </div>
   </footer>
 </template>
+
+<style scoped>
+/* position: fixed;
+top: 0;
+left: 0;
+z-index: 1060;
+display: none;
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+overflow-y: auto;
+outline: 0; */
+
+
+/* position: relative;
+display: flex;
+flex-direction: column;
+width: 100%;
+pointer-events: auto;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid rgba(0,0,0,.2);
+border-radius: .3rem;
+outline: 0; */
+
+</style>
