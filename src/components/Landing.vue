@@ -146,6 +146,12 @@
 
       <section class="section">
         <div class="container">
+
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
           <!-- <div
             class="row justify-content-center text-center mb-5"
             data-aos="fade"
@@ -184,41 +190,6 @@
           </div>
         </div>
       </section>
-
-      <!-- ======= CTA Section ======= -->
-      <section class="section cta-section" id="head">
-        <div class="container">
-          <div class="row align-items-center">
-            <div
-              class="col-md-6 me-auto text-center text-md-start mb-5 mb-md-0"
-            >
-              <h1 class="text-black">Coming Soon</h1>
-              <p class="text-black">
-                We're working hard to improve our website and we'll be ready to
-                launch after
-              </p>
-              <div class="countdown d-flex justify-content-center">
-                <Countdown end="July 12, 2021"></Countdown>
-              </div>
-            </div>
-            <div class="col-md-5 text-center text-md-end">
-              <p>
-                <a
-                  href="https://apps.apple.com/ng/app/koogah-customer/id1562395555"
-                  class="btn btn-dark d-inline-flex align-items-center me-2"
-                  ><i class="bx bxl-apple"></i><span>App store</span></a
-                >
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.koogah.customer"
-                  class="btn btn-dark d-inline-flex align-items-center"
-                  ><i class="bx bxl-play-store"></i><span>Google play</span></a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End CTA Section -->
     </main>
     <!-- End #main -->
 
@@ -228,11 +199,10 @@
 </template>
 
 <script>
-import Countdown from "vuejs-countdown";
 import Footer from "./Footer";
 import Header from "./Header";
 export default {
-  components: { Countdown, Header, Footer },
+  components: { Header, Footer },
   mounted: () => {
     document.title = "Koogah - Logistics Done Efficiently";
   },

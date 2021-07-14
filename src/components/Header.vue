@@ -35,7 +35,7 @@
             </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black" href="#">
+              <a class="nav-link text-black" href="/faq">
               <h6>FAQ</h6>
             </a>
             </li>

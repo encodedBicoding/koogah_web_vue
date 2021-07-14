@@ -36,7 +36,7 @@
                     >Become a Dispatcher</a
                   >
                 </li>
-                <li><a href="#" class="text-white">FAQ</a></li>
+                <li><a href="/faq" class="text-white">FAQ</a></li>
                 <li>
                   <a href="mailto:contact@koogah.com" class="text-white"
                     >Contact</a

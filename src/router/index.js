@@ -34,6 +34,12 @@ const routes = [
 
     component: () => import("../views/privacy.vue"),
   },
+  {
+    path: "/faq",
+    name: "faq",
+
+    component: () => import("../views/faq.vue"),
+  },
 ];
 
 const router = new VueRouter({
